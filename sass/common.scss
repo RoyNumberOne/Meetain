@@ -1,0 +1,18 @@
+// ===============var===============
+$owen_blue: #227698 ;
+// ================mixin==============
+@mixin ab_center {
+    left: 50%;
+    top: 50%;
+    transform: translate(-50% , -50%);
+}
+// ===============css===============
+html , body {
+    padding: 0;
+    margin: 0;
+    position: relative;
+}
+* {
+    font-family: 微軟正黑體;
+    box-sizing: border-box;
+}
