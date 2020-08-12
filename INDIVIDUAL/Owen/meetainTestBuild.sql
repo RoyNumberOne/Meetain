@@ -96,7 +96,6 @@ CREATE TABLE IF NOT EXISTS degree (											-- :::::難度:::::
 ) ;
 desc degree;
 select * from degree;
-insert into degree (degree_category,degree_describe) value('1', 'easy'),('2','normal'),('3','hard'),('4','expert');
 desc degree;
 select * from degree;
 
