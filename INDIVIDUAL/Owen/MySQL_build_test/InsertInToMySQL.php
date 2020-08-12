@@ -1,7 +1,7 @@
 <?php
 
-    $json_string = file_get_contents('./Initial_member.json');  
-    $data = json_decode($json_string, true);  
+    // $json_string = file_get_contents('./Initial_member.json');  
+    // $data = json_decode($json_string, true);  
  
     // var_dump($data);
 
@@ -23,7 +23,7 @@
 $json_string = file_get_contents('./Initial_member.json');  
 $data = json_decode($json_string, true);  
 try	{
-	$dsn = "mysql:host=localhost;port=8889;dbname=meetainTest;charset=utf8";
+	$dsn = "mysql:host=localhost;port=8889;dbname=meetainDataIn;charset=utf8";
 	$user = "root";
 	$password = "root";
 	$options = array(PDO::ATTR_CASE=>PDO::CASE_NATURAL, PDO::ATTR_ERRMODE=>PDO::ERRMODE_EXCEPTION);
