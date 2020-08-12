@@ -7,8 +7,7 @@ html, body {
 
 * {
   font-family: 微軟正黑體;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 p#test {
@@ -16,8 +15,7 @@ p#test {
   color: #227698;
   left: 50%;
   top: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   font-size: 170px;
 }
 
@@ -25,10 +23,5 @@ body {
   background-color: #444;
   height: 100vh;
   width: 100vw;
-}
-
-.souretree{
-  font-size: 30px;
-  color: #227698;
 }
 /*# sourceMappingURL=sample.css.map */
