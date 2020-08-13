@@ -7,12 +7,11 @@ use meetainDataIn;
 -- insert into degree (degree_category,degree_describe) value('1', 'easy'),('2','normal'),('3','hard'),('4','expert');
 
 
+SELECT * FROM achievement;
+desc achievement;
 
 SELECT * FROM member;
 desc member;
-
-SELECT * FROM achievement;
-desc achievement;
 
 SELECT * FROM administrator;
 desc administrator;
