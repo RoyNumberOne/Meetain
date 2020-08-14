@@ -4,9 +4,6 @@ use meetainDataIn;
 -- use meetainTest;
 
 
--- insert into degree (degree_category,degree_describe) value('1', 'easy'),('2','normal'),('3','hard'),('4','expert');
-
-
 SELECT * FROM achievement;
 desc achievement;
 
@@ -42,6 +39,7 @@ desc member;
 
 SELECT * FROM member_guide;
 desc member_guide;
+-- insert into member_guide (guide_no,mem_no,guide_period_start,guide_period_end,guide_image) value ('101061','10002','1998/5/6', date_add('1998/5/6', interval 4 year),'#');
 
 SELECT * FROM member_keep;
 desc member_keep;
@@ -75,3 +73,6 @@ desc tour_participate;
 
 SELECT * FROM tour_report;
 desc tour_report;
+
+-- select * from tour t join mountain m on t.tour_mountain = m.mountain_no where m.degree_category = 4 and m.mountain_area = 'east';
+-- select * from tour t join mountain m on t.tour_mountain = m.mountain_no where m.degree_category = 4 and m.mountain_area = 'west';
