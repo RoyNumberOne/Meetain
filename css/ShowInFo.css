@@ -18,7 +18,7 @@ p#test {
   top: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  font-size: 60px;
+  font-size: 170px;
 }
 
 body {
@@ -26,4 +26,4 @@ body {
   height: 100vh;
   width: 100vw;
 }
-/*# sourceMappingURL=index.css.map */
+/*# sourceMappingURL=ShowInFo.css.map */

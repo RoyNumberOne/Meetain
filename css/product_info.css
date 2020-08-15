@@ -1,5 +1,6 @@
 * {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 div.wrap {
@@ -8,14 +9,20 @@ div.wrap {
 }
 
 div.wrap .pre_next {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 div.wrap .pre_next .pre_porduct {
   width: 200px;
   height: 100px;
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
@@ -35,6 +42,8 @@ div.wrap .pre_next .pre_porduct .pre_text {
 div.wrap .pre_next .next_product {
   height: 100px;
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
@@ -63,6 +72,8 @@ div.wrap .item_title h2 {
 
 div.wrap .product_block {
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
@@ -92,8 +103,12 @@ div.wrap .product_block .item_left .item_background {
 
 div.wrap .product_block .item_left .item_dot_part {
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 div.wrap .product_block .item_left .item_dot_part .item_dot {
@@ -123,8 +138,12 @@ div.wrap .product_block .item_right .item_info_text p {
 }
 
 div.wrap .product_block .item_right .item_size {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-evenly;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   margin: 50px;
 }
 
@@ -147,8 +166,12 @@ div.wrap .product_block .item_right .add_to_cart {
 }
 
 div.wrap .product_block .item_right .social_icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: flex-end;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   margin: 50px 0;
 }
 
