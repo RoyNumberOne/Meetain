@@ -11,8 +11,10 @@
     <script src="./js/popper.min.js"></script>
     <script src="./js/bootstrap.min.js"></script>
     <script src="./js/fullpage.min.js"></script>
+    <script src="./js/ShowInFo.js"></script>
 </head>
 <body>
-    <p id="test">Sample</p>
+    <button type="button" class="btn btn-primary" id="memList">會員名單</button>
+    <div id="memList_ans"></div> 
 </body>
 </html>
