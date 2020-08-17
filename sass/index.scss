@@ -93,8 +93,8 @@ div.bg{
     & div.bgbox{
         width: 120vw;
         & img{
-            width: 2000px;
-            left: calc(-10vw);
+            width: calc(100vw + 400px);
+            left: calc(-200px);
             bottom: calc(-23vh);
             position: fixed; 
             transition: 0.2s all linear;    

@@ -123,7 +123,7 @@ html, body {
 header {
   z-index: 1;
   width: 100%;
-  height: 400px;
+  height: 200px;
 }
 
 header div.logobox {
@@ -131,15 +131,15 @@ header div.logobox {
   left: 0;
   width: 100%;
   position: fixed;
-  height: 400px;
+  height: 200px;
   background-color: #2C5E9E;
 }
 
 header div.logobox img#logo {
-  top: 100px;
+  top: 25px;
   position: absolute;
-  width: 500px;
-  left: calc(( 100% - 500px ) / 2);
+  width: 400px;
+  left: calc(( 100% - 400px ) / 2);
 }
 
 main {
@@ -554,8 +554,8 @@ div.bg div.bgbox {
 }
 
 div.bg div.bgbox img {
-  width: 2000px;
-  left: calc(-10vw);
+  width: calc(100vw + 400px);
+  left: calc(-200px);
   bottom: calc(-23vh);
   position: fixed;
   -webkit-transition: 0.2s all linear;

@@ -76,7 +76,7 @@ h3 {
   font-size: 20px;
   letter-spacing: 1.5px;
   line-height: 1.6;
-  font-weight: 800;
+  font-weight: 600;
 }
 
 p {
@@ -94,8 +94,8 @@ span {
 }
 
 header nav p {
-  font-size: 20px;
-  font-weight: 600;
+  font-size: 20px !important;
+  font-weight: 600 !important;
 }
 
 html, body {
@@ -123,7 +123,7 @@ html, body {
 header {
   z-index: 1;
   width: 100%;
-  height: 400px;
+  height: 200px;
 }
 
 header div.logobox {
@@ -131,15 +131,15 @@ header div.logobox {
   left: 0;
   width: 100%;
   position: fixed;
-  height: 400px;
+  height: 200px;
   background-color: #2C5E9E;
 }
 
 header div.logobox img#logo {
-  top: 100px;
+  top: 25px;
   position: absolute;
-  width: 500px;
-  left: calc(( 100% - 500px ) / 2);
+  width: 400px;
+  left: calc(( 100% - 400px ) / 2);
 }
 
 main {

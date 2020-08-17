@@ -62,7 +62,6 @@ a {
   }
 }
 // ===============var===============
-$owen_blue: #227698 ;
 $mt_black: #222222 ;
 $mt_grey1: #F3F3F3;
 $mt_grey2: #EAF1F4;
@@ -92,7 +91,7 @@ h3 {
     font-size: 20px;
     letter-spacing: 1.5px;
     line-height: 1.6;
-    font-weight: 800;
+    font-weight: 600;
 }
 p {
     font-size: 18px;
@@ -121,3 +120,31 @@ html , body {
 }
 
 // ============components============
+
+
+// ===========media screen===========
+
+@media screen and (min-width: 1440px) {
+    // 請用1366
+        // max-width: 1366px
+      }
+@media screen and (min-width: 1200px) and (max-width: 1440px){
+    // 請用1152
+        // max-width: 1152px
+      }
+@media screen and (min-width: 992px) and (max-width: 1199px){
+    // 請用960
+        // max-width: 960px
+      }
+@media screen and (min-width: 768px) and (max-width: 991px){
+    // 請用720
+        // max-width: 720px
+      }
+@media screen and (min-width: 576px) and (max-width: 767px){
+  // 請用540
+      // max-width: 540px
+}
+@media screen and (max-width: 575px){
+    // 請用100%
+        // max-width: 100%
+      }

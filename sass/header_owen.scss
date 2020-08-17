@@ -5,29 +5,7 @@
 // }
 
 
-li{
-    @media screen and (min-width: 992px) {
-        & a{
-            svg path {
-                color: white !important ;
-                transform: scale(1.5) ;
-            }
-        }
-    }
-    @media screen and (max-width: 991px) {
-        & a{
-            svg path {
-                color: $mt_blue2 !important ;
-            }
-        }
-    }
-    &:hover a{
-        & svg path {
-            color: $mt_yellow !important ;
-        }
-    }
 
-}
  
 
 header{
@@ -117,7 +95,30 @@ header{
             }
         }
     }
-}
+
+    li{
+        @media screen and (min-width: 992px) {
+            & a{
+                svg path {
+                    color: white !important ;
+                    transform: scale(1.5) ;
+                }
+            }
+        }
+        @media screen and (max-width: 991px) {
+            & a{
+                svg path {
+                    color: $mt_blue2 !important ;
+                }
+            }
+        }
+        &:hover a{
+            & svg path {
+                color: $mt_yellow !important ;
+            }
+        }
+    
+    }
 
 div#hamburgerBG{
     position: absolute;
@@ -177,6 +178,8 @@ div#hamburgerBG{
     }
 }
 
+}
+
 @media screen and (min-width: 1200px) {
     div#headerbox {
         width: 1200px;
@@ -186,10 +189,10 @@ div#hamburgerBG{
                 opacity: 0;
                 transition: 0.2s all ease-in-out;
                 display: inline-block;
-                transform: translate(330px,-40px) skewX(15deg);
+                transform: translate(335px,-40px) skewX(15deg);
                 width: 120px;
                 height: 30px;
-                margin: 0 31px;
+                margin: 0 21.5px;
                 background-color: $mt_yellow;
             }
         }
@@ -198,7 +201,7 @@ div#hamburgerBG{
             top: -10px;
             & ul.link_list.llleft{
                 & li{
-                    margin: 0 60px;
+                    margin: 0 45px;
                     &:hover p{
                         color: $mt_blue2;
                     }
@@ -236,11 +239,11 @@ div#hamburgerBG{
             }
         }
         & nav.menu{
-            margin-left: 110px;
+            margin-left: 104px;
             top: -10px;
             & ul.link_list.llleft{
                 & li{
-                    margin: 0 30px;
+                    margin: 0 25px;
                     &:hover p{
                         color: $mt_blue2;
                     }
@@ -506,26 +509,26 @@ div#hamburgerBG{
             display: block;
         }
 
-    }
-    div#hamburgerBG{
-        width: 350px;
-        & div.yellow1{
-            top: 95px;
-            height: 50px;
-            left: -106px;
-            width: 175px;
-        }
-        & div.yellow2{
-            top: 170px;
-            height: 50px;
-            left: -85px;
-            width: 175px;
-        }
-        & div.yellow3{
-            top: 245px;
-            height: 50px;
-            left: -64px;
-            width: 175px;
+        div#hamburgerBG{
+            width: 350px;
+            & div.yellow1{
+                top: 95px;
+                height: 50px;
+                left: -106px;
+                width: 175px;
+            }
+            & div.yellow2{
+                top: 170px;
+                height: 50px;
+                left: -85px;
+                width: 175px;
+            }
+            & div.yellow3{
+                top: 245px;
+                height: 50px;
+                left: -64px;
+                width: 175px;
+            }
         }
     }
 }
@@ -546,25 +549,25 @@ div#hamburgerBG{
 //     }
 //     & a.tour p::after {
 //         display: block;
-//         @media screen and (min-width: 1199px) {left: 51px;}
-//         @media screen and (min-width: 992px) and (max-width: 1199px){left: 23px; }
-//         @media screen and (min-width: 576px) and (max-width: 991px) {top: 75px; width: 115px; }
-//         @media screen and (max-width: 575px) {top: 42px; width: 72px; }
+//         @media screen and (min-width: 1199px) {left: 48px;}
+//         @media screen and (min-width: 992px) and (max-width: 1199px){left: 27px; }
+//         @media screen and (min-width: 576px) and (max-width: 991px) {top: 75px; width: 165px; }
+//         @media screen and (max-width: 575px) {top: 42px; width: 100px; }
 //     }
-    // & a.forum p::after {
-    //     display: block;
-    //     @media screen and (min-width: 1199px) { left: 237px; }
-    //     @media screen and (min-width: 992px) and (max-width: 1199px){left: 148px;}
-    //     @media screen and (min-width: 576px) and (max-width: 991px) {top: 75px; width: 165px; }
-    //     @media screen and (max-width: 575px) {top: 42px; width: 100px; }
-    // }
-    // & a.product p::after {
-    //     display: block;
-    //     @media screen and (min-width: 1199px) {left: 424px;}
-    //     @media screen and (min-width: 992px) and (max-width: 1199px){left: 275px; }
-    //     @media screen and (min-width: 576px) and (max-width: 991px) {top: 75px; width: 115px; }
-    //     @media screen and (max-width: 575px) {top: 42px; width: 72px; }
-    // }
+//     & a.forum p::after {
+//         display: block;
+//         @media screen and (min-width: 1199px) { left: 213px; }
+//         @media screen and (min-width: 992px) and (max-width: 1199px){left: 154px;}
+//         @media screen and (min-width: 576px) and (max-width: 991px) {top: 75px; width: 165px; }
+//         @media screen and (max-width: 575px) {top: 42px; width: 100px; }
+//     }
+//     & a.product p::after {
+//         display: block;
+//         @media screen and (min-width: 1199px) {left: 380px;}
+//         @media screen and (min-width: 992px) and (max-width: 1199px){left: 281px; }
+//         @media screen and (min-width: 576px) and (max-width: 991px) {top: 75px; width: 165px; }
+//         @media screen and (max-width: 575px) {top: 42px; width: 100px; }
+//     }
 // }
 
 // nav.menu ul.link_list.llright li{

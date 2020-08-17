@@ -1,4 +1,3 @@
-@charset "UTF-8";
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
 del, dfn, em, img, ins, kbd, q, s, samp,
@@ -64,7 +63,8 @@ a:visited {
 }
 
 * {
-  font-family: 'Noto Sans TC', '微軟正黑體';
+  font-family: 'Noto Sans TC' !important;
+  color: #222222;
 }
 
 h2 {
@@ -93,11 +93,9 @@ span {
   letter-spacing: 0.4px;
 }
 
-span {
-  font-size: 14px;
-  font-weight: 500;
-  line-height: 1.6;
-  letter-spacing: 0.4px;
+header nav p {
+  font-size: 20px !important;
+  font-weight: 600 !important;
 }
 
 html, body {
