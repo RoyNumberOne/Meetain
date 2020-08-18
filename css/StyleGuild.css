@@ -118,10 +118,11 @@ html, body {
   margin: 0;
   padding: 0;
   height: auto;
+  background-color: #eaf1f4;
 }
 
 header {
-  z-index: 1;
+  z-index: 25;
   width: 100%;
   height: 200px;
 }
@@ -167,16 +168,23 @@ main div.hr {
   margin: 30px;
 }
 
-main button.btnA_XLwA {
+main button {
+  margin-bottom: 20px;
+}
+
+main button.btnA_XLwRA {
+  z-index: 2;
   width: 190px;
   height: 45px;
   border: 1px solid #222222;
   background-color: white;
   outline: 0px !important;
+  -webkit-transition: 0.2s all ease-in-out;
+  transition: 0.2s all ease-in-out;
 }
 
-main button.btnA_XLwA::after {
-  z-index: -1;
+main button.btnA_XLwRA::after {
+  z-index: 1;
   position: absolute;
   content: "";
   width: 100%;
@@ -185,15 +193,19 @@ main button.btnA_XLwA::after {
   border-bottom: 1px solid #222222;
   left: 8px;
   top: 8px;
+  -webkit-transition: 0.2s all ease-in-out;
+  transition: 0.2s all ease-in-out;
 }
 
-main button.btnA_XLwA p {
+main button.btnA_XLwRA p {
   position: absolute;
   top: 7px;
   left: 20px;
+  -webkit-transition: 0.2s all ease-in-out;
+  transition: 0.2s all ease-in-out;
 }
 
-main button.btnA_XLwA div.btnArrowXL {
+main button.btnA_XLwRA div.btnArrowXL {
   position: absolute;
   left: 150px;
   top: 13px;
@@ -201,10 +213,12 @@ main button.btnA_XLwA div.btnArrowXL {
   height: 0;
   border-style: solid;
   border-width: 9px 0 0 9px;
+  -webkit-transition: 0.2s all ease-in-out;
+  transition: 0.2s all ease-in-out;
   border-color: transparent transparent transparent #222222;
 }
 
-main button.btnA_XLwA div.btnArrowXL::before {
+main button.btnA_XLwRA div.btnArrowXL::before {
   position: absolute;
   content: "";
   left: -11px;
@@ -213,19 +227,64 @@ main button.btnA_XLwA div.btnArrowXL::before {
   height: 0;
   border-style: solid;
   border-width: 9px 0 0 9px;
+  -webkit-transition: 0.2s all ease-in-out;
+  transition: 0.2s all ease-in-out;
   border-color: transparent transparent transparent white;
 }
 
-main button.btnA_XLwA div.btnArrowXL::after {
+main button.btnA_XLwRA div.btnArrowXL::after {
   position: absolute;
   content: "";
   width: 40px;
   height: 2px;
   left: -40px;
+  -webkit-transition: 0.2s all ease-in-out;
+  transition: 0.2s all ease-in-out;
   background-color: #222222;
 }
 
-main button.btnA_LwA {
+main button.btnA_XLwRA:hover::after {
+  z-index: -1;
+  position: absolute;
+  content: "";
+  width: calc(100% + 8px);
+  height: calc(100% + 8px);
+  background-color: #FFC400;
+  border-right: 0px;
+  border-bottom: 0px;
+  left: 0px;
+  top: 0px;
+  -webkit-transition: 0.2s all ease-in-out;
+  transition: 0.2s all ease-in-out;
+}
+
+main button.btnA_XLwRA:hover p {
+  color: white;
+  -webkit-transform: translate(5px, 5px);
+          transform: translate(5px, 5px);
+}
+
+main button.btnA_XLwRA:hover {
+  border: 0px;
+  background-color: #FFC400;
+}
+
+main button.btnA_XLwRA:hover div {
+  left: 158px;
+  top: 17px;
+  border-color: transparent transparent transparent white;
+}
+
+main button.btnA_XLwRA:hover div::before {
+  border-color: transparent transparent transparent #FFC400;
+}
+
+main button.btnA_XLwRA:hover div::after {
+  background-color: white;
+}
+
+main button.btnA_LwRA {
+  z-index: 2;
   width: 95px;
   height: 45px;
   border: 1px solid #222222;
@@ -233,8 +292,8 @@ main button.btnA_LwA {
   outline: 0px !important;
 }
 
-main button.btnA_LwA::after {
-  z-index: -1;
+main button.btnA_LwRA::after {
+  z-index: 1;
   position: absolute;
   content: "";
   width: 100%;
@@ -245,13 +304,13 @@ main button.btnA_LwA::after {
   top: 8px;
 }
 
-main button.btnA_LwA p {
+main button.btnA_LwRA p {
   position: absolute;
   top: 7px;
   left: 3px;
 }
 
-main button.btnA_LwA div.btnArrowL {
+main button.btnA_LwRA div.btnArrowL {
   position: absolute;
   left: 76px;
   top: 13px;
@@ -262,7 +321,7 @@ main button.btnA_LwA div.btnArrowL {
   border-color: transparent transparent transparent #222222;
 }
 
-main button.btnA_LwA div.btnArrowL::before {
+main button.btnA_LwRA div.btnArrowL::before {
   position: absolute;
   content: "";
   left: -11px;
@@ -274,7 +333,7 @@ main button.btnA_LwA div.btnArrowL::before {
   border-color: transparent transparent transparent white;
 }
 
-main button.btnA_LwA div.btnArrowL::after {
+main button.btnA_LwRA div.btnArrowL::after {
   position: absolute;
   content: "";
   width: 20px;
@@ -284,6 +343,7 @@ main button.btnA_LwA div.btnArrowL::after {
 }
 
 main button.btnA_L {
+  z-index: 2;
   width: 95px;
   height: 45px;
   border: 1px solid #222222;
@@ -292,7 +352,7 @@ main button.btnA_L {
 }
 
 main button.btnA_L::after {
-  z-index: -1;
+  z-index: 1;
   position: absolute;
   content: "";
   width: 100%;
@@ -309,7 +369,7 @@ main button.btnA_L p {
   left: 8px;
 }
 
-main button.btnA_M {
+main button.btnA_MwRA {
   width: 47px;
   height: 45px;
   border: 1px solid #222222;
@@ -317,7 +377,7 @@ main button.btnA_M {
   outline: 0px !important;
 }
 
-main button.btnA_M::after {
+main button.btnA_MwRA::after {
   z-index: -1;
   position: absolute;
   content: "";
@@ -329,7 +389,7 @@ main button.btnA_M::after {
   top: 8px;
 }
 
-main button.btnA_M div.btnArrowM {
+main button.btnA_MwRA div.btnArrowM {
   position: absolute;
   left: 22px;
   top: 13px;
@@ -340,7 +400,7 @@ main button.btnA_M div.btnArrowM {
   border-color: transparent transparent transparent #222222;
 }
 
-main button.btnA_M div.btnArrowM::before {
+main button.btnA_MwRA div.btnArrowM::before {
   position: absolute;
   content: "";
   left: -11px;
@@ -352,7 +412,7 @@ main button.btnA_M div.btnArrowM::before {
   border-color: transparent transparent transparent white;
 }
 
-main button.btnA_M div.btnArrowM::after {
+main button.btnA_MwRA div.btnArrowM::after {
   position: absolute;
   content: "";
   width: 20px;
@@ -362,6 +422,7 @@ main button.btnA_M div.btnArrowM::after {
 }
 
 main button.btnA_S {
+  z-index: 2;
   width: 15px;
   height: 15px;
   border: 1px solid #222222;
@@ -378,12 +439,63 @@ main button.btnA_S p {
 }
 
 main button.btnB_XL_blue {
+  z-index: 2;
   width: 190px;
   height: 45px;
-  background-color: #2C5E9E;
-  border-radius: 15px;
   outline: 0px !important;
+}
+
+main button.btnB_XL_blue::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border: 4px solid #2C5E9E;
+  border-radius: 15px;
+}
+
+main button.btnB_XL_blue p {
+  z-index: 1;
   color: white;
+  -webkit-transition: 0.4s all ease-in-out;
+  transition: 0.4s all ease-in-out;
+}
+
+main button.btnB_XL_blue div.bg {
+  z-index: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+  background-color: #2C5E9E;
+  overflow: hidden;
+}
+
+main button.btnB_XL_blue div.bg::after {
+  content: "";
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  left: 100%;
+  width: 130%;
+  height: 100%;
+  background-color: white;
+  -webkit-transform: skewX(15deg);
+          transform: skewX(15deg);
+  -webkit-transition: 0.3s all ease-in-out;
+  transition: 0.3s all ease-in-out;
+}
+
+main button.btnB_XL_blue:hover p {
+  color: #2C5E9E;
+}
+
+main button.btnB_XL_blue:hover div.bg::after {
+  left: 0%;
 }
 
 main button.btnB_XL_yellow {

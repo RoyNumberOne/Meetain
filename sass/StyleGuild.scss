@@ -10,10 +10,11 @@ html,body {
     margin: 0;
     padding: 0;
     height: auto;
+    background-color: rgba($mt_grey2,1);
 }
 
 header { 
-    z-index: 1;
+    z-index: 25;
     width: 100%;
     height: 200px;
     & div.logobox{
@@ -50,14 +51,19 @@ main {
         background-color: $mt_blue1;
         margin: 30px;
     }
-    button.btnA_XLwA{
+    button{
+        margin-bottom: 20px;
+    }
+    button.btnA_XLwRA{
+        z-index: 2;
         width: 190px;
         height: 45px;
         border: 1px solid $mt_black;
         background-color: white;
         outline: 0px !important;
+        transition: 0.2s all ease-in-out;
         &::after{
-            z-index: -1;
+            z-index: 1;
             position: absolute;
             content: "";
             width: 100%;
@@ -66,11 +72,13 @@ main {
             border-bottom: 1px solid $mt_black;
             left: 8px;
             top: 8px;
+            transition: 0.2s all ease-in-out;
         }
         & p {
             position: absolute;
             top: 7px;
             left: 20px;
+            transition: 0.2s all ease-in-out;
         }
         & div.btnArrowXL{
             position: absolute;
@@ -80,6 +88,7 @@ main {
             height: 0;
             border-style: solid;
             border-width: 9px 0 0 9px;
+            transition: 0.2s all ease-in-out;
             border-color: transparent transparent transparent $mt_black;
             // overflow: hidden;
             &::before{
@@ -91,6 +100,7 @@ main {
                 height: 0;
                 border-style: solid;
                 border-width: 9px 0 0 9px;
+                transition: 0.2s all ease-in-out;
                 border-color: transparent transparent transparent white;
             }
             &::after{
@@ -99,19 +109,55 @@ main {
                 width: 40px;
                 height: 2px;
                 left: -40px;
+                transition: 0.2s all ease-in-out;
                 background-color: $mt_black;
             }
-        }   
+        }  
+        &:hover::after{
+            z-index: -1;
+            position: absolute;
+            content: "";
+            width: calc(100% + 8px);
+            height: calc(100% + 8px);
+            background-color: $mt_yellow;
+            border-right: 0px;
+            border-bottom: 0px;
+            left: 0px;
+            top: 0px;
+            transition: 0.2s all ease-in-out;
+        }
+        &:hover p{
+            color: white;
+            transform: translate(5px,5px);
+        }
+        &:hover{
+            border: 0px;
+            background-color: $mt_yellow;
+        }
+        &:hover div{
+            left: 158px;
+            top: 17px;
+            border-color: transparent transparent transparent white;
+        }
+        &:hover div::before{
+            // transform: translate(4px,4px);
+            border-color: transparent transparent transparent $mt_yellow;
+        }
+        &:hover div::after{
+            // transform: translate(4px,4px);
+            background-color: white;
+        }
     }
 
-    button.btnA_LwA{
+    button.btnA_LwRA{
+        z-index: 2;
         width: 95px;
         height: 45px;
         border: 1px solid $mt_black;
         background-color: white;
         outline: 0px !important;
         &::after{
-            z-index: -1;
+            z-index: 1;
             position: absolute;
             content: "";
             width: 100%;
@@ -159,13 +205,14 @@ main {
     }
 
     button.btnA_L{
+        z-index: 2;
         width: 95px;
         height: 45px;
         border: 1px solid $mt_black;
         background-color: white;
         outline: 0px !important;
         &::after{
-            z-index: -1;
+            z-index: 1;
             position: absolute;
             content: "";
             width: 100%;
@@ -180,9 +227,9 @@ main {
             top: 7px;
             left: 8px;
         }
-    }
+    } 
 
-    button.btnA_M{
+    button.btnA_MwRA{
         width: 47px;
         height: 45px;
         border: 1px solid $mt_black;
@@ -232,6 +279,7 @@ main {
     }
 
     button.btnA_S{
+        z-index: 2;
         width: 15px;
         height: 15px;
         border: 1px solid $mt_black;
@@ -246,12 +294,57 @@ main {
         }
     }
     button.btnB_XL_blue{
+        z-index: 2;
         width: 190px;
         height: 45px;
-        background-color: $mt_blue2;
-        border-radius: 15px;
+        // border: 4px solid $mt_blue2;
+        // border-radius: 15px;
         outline: 0px !important;
-        color: white;
+        &::after {
+            content: "";
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            border: 4px solid $mt_blue2;
+            border-radius: 15px;
+        }
+        & p {
+            z-index: 1;
+            color: white;
+            transition: 0.4s all ease-in-out;
+        }
+        & div.bg{
+            z-index: 0;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border-radius: 15px;
+            background-color: $mt_blue2;
+            overflow: hidden;
+            &::after {
+                content: "";
+                z-index: -1;
+                position: absolute;
+                top: 0;
+                left: 100%;
+                width: 130%;
+                height: 100%;
+                // border-radius: 15px;
+                background-color: white;
+                transform: skewX(15deg);
+                transition: 0.3s all ease-in-out;
+            }
+        }
+        &:hover p{
+            color: $mt_blue2;
+        }
+        &:hover div.bg::after{
+            left: 0%;
+        }
     }
     button.btnB_XL_yellow{
         width: 190px;
